@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Form</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6 col-xs-12">
+                    <nav>
+                        <div id="menu-toggle">
+                            <div class="hamburger">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="cross">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <ul class="main-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact_form.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <br>
+                </div>
+            </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>About Me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <img src="assets/tony.jpg" alt="Your Name" class="profile-pic img-responsive"
+                        style="border-radius: 50%;">
+                    <h3>Chidhrapu Harini</h3>
+                    <p>
+                        I am a passionate web developer with a love for coding and creating awesome websites. With a
+                        background in computer science and a passion for learning new technologies, I strive to build
+                        user-friendly and visually appealing web applications.
+                    </p>
+                    <p>
+                        My skills include HTML, CSS, JavaScript, and more. I'm also experienced in various competative
+                        exams and ready to take on new challenges.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script>
+    // Counterup
+    $('.counter').counterUp({
+        time: 1000
+    });
+
+    // Main Navigation
+    $('#menu-toggle').click(function () {
+        $(this).toggleClass('open'),
+            $('.main-nav').toggleClass('show-it');
+    })
+</script>
+
+</html>
